@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Article</title>
+    <link rel="stylesheet" href="articlestyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <img src="logohp.png" alt="litcode logo">
+            </div>
+        <nav>
+            <ul>
+                <li><a href="homeindex.html">Home</a></li>
+                <li><a href="articleindex.html">CTU</a></li>
+                <li><a href="moosicindex.html">Moosic</a></li>
+                <li><a href="cubemaniaindex.html">Cubemania</a></li>
+                <li><a href="#" onclick="openDialog('loginDialog')">Login</a></li>
+                <li><a href="#" onclick="openDialog('registerDialog')">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
+        <main class="latest-news">
+            <section class="news-item">
+                <h3>CTU Danao Sweeping Success at CpE Regional Challenge</h3>
+                <p class="author">By Angelito Valderama</p>
+                <p class="date">Published October 5, 2024 | Updated October 7, 2024</p>
+                <div class="news-content">
+                    <div class="main-news-img">
+                        <img src="imagesarticle/latest1.jpg" alt="CTU Danao Sweeping Success" class="news-image">
+                        <img src="imagesarticle/latest2.jpg" alt="CTU Danao Sweeping Success" class="news-image">
+                        <img src="imagesarticle/latest3.jpg" alt="CTU Danao Sweeping Success" class="news-image">
+                    </div>
+                    <p>The entire Department of Computer Engineering and the CTU Danao community stand united in pride, celebrating the remarkable achievements of the students who emerged victorious in an impressive display of skill and camaraderie at the CpE Regional Challenge held at CIT University on February 17, 2024.</p>
+                    <p>Mel James Calzada triumphed in the Programming Challenge – C Category, showcasing exceptional prowess. Joining him were Jude Anthony Sayson (2nd runner-up in Python) and Pil Daniel Laurente (2nd runner-up in Java).</p>
+                    <img src="imagesarticle/latest4.jpg" alt="CTU Danao Sweeping Success" class="news-image large">
+                    <p>The EGames category saw stellar performances by Vincent Capa, Judiel Niño Durano, Vincent James Camay, Mhiley Pepito, Iñakie Antolo, and John Ray Mata. Their collective talent and teamwork propelled them to victory.</p>
+                    <p>Each victory symbolizes not only individual excellence but also the collective spirit of collaboration and dedication that defines the institution.</p>
+                </div>
+            </section>
+        </main>
+    </section>
+
+    <section id="articles">
+    <section class="more-news">
+        <h2>More News</h2>
+            <div class="thumbnail-container">
+            <div class="thumbnail">
+                 <img src="imagesarticle/morenews1.jpg" alt="Thumbnail 1">
+                 <h4>CTU Entrance Login System: Revolutionizing Campus Security</h4>
+                    <p class="subtitle">The Cebu Technological University (CTU) continues to set a high standard for educational excellence, not only in academics but also in ensuring the safety and security of its students, faculty, and staff. One of the latest innovations introduced is the CTU Entrance Login System, a streamlined approach to campus access that combines convenience with cutting-edge technology.
+
+                    </p>
+            </div>
+            <div class="thumbnail">
+                <img src="imagesarticle/morenews2.jpg" alt="Thumbnail 2">
+                <h4>Welcome to Cebu Technological University (CTU): A Gateway to Excellence</h4>
+                    <p class="subtitle">At the forefront of Cebu Technological University's (CTU) dynamic campus lies its impressive entrance—a gateway that symbolizes the institution's commitment to academic excellence, innovation, and community. The CTU entrance stands as more than just a passage; it is the first step into a world of opportunities, growth, and learning.</p>
+            </div>
+            <div class="thumbnail">
+                <img src="imagesarticle/morenews3.jpg" alt="Thumbnail 3">
+                <h4>The CTU Canteen: Where Great Meals Begin with Patience</h4>
+                    <p class="subtitle">The Cebu Technological University (CTU) canteen is more than just a place to grab a quick bite—it's a bustling hub where students, staff, and faculty come together to refuel and recharge. With its wide array of affordable meals, snacks, and beverages, the canteen offers something for every palate, making it a favorite spot on campus.</p>
+            </div>
+                <div class="thumbnail">
+                <img src="imagesarticle/morenews4.jpg" alt="Thumbnail 4">
+                <h4>Ensuring Safety at CTU: The Pedestrian Lane</h4>
+                    <p class="subtitle">In front of Cebu Technological University (CTU), the pedestrian lane serves as a crucial pathway, ensuring the safety of students, staff, and visitors as they navigate the bustling streets outside the campus. With a steady flow of vehicles and foot traffic, this designated crossing zone is a symbol of the university's commitment to promoting safety and order.</p>
+            </div>
+            <div class="thumbnail">
+                <img src="imagesarticle/morenews5.jpg" alt="Thumbnail 5">
+                <h4>Affordable Dining at CTU: The Campus Canteen</h4>
+                <p class="subtitle">Cebu Technological University (CTU) takes pride not only in academic excellence but also in ensuring that its students and staff have access to affordable and nutritious meals. The campus canteen serves as a hub where delicious and budget-friendly food options meet the needs of the university community.</p>
+            </div>
+             <div class="thumbnail">
+                 <img src="imagesarticle/morenews6.jpg" alt="Thumbnail 6">
+                 <h4>Bistro: CTU’s New Dining Experience</h4>
+                 <p class="subtitle">Cebu Technological University (CTU) has elevated campus dining with the introduction of its new canteen, Bistro. This modern addition brings a fresh vibe to the university, offering not just meals but an upgraded dining experience for students, faculty, and staff.</p>
+              </div>
+             </div>
+        </section>
+    </section>
+
+    <div id="loginDialog" class="dialog">
+        <div class="dialog-content">
+            <span class="close" onclick="closeDialog('loginDialog')">&times;</span>
+            <h2>Login</h2>
+            <form>
+                <label for="login-username">Username</label>
+                <input type="text" id="login-username" placeholder="Enter Username" required>
+                <label for="login-password">Password</label>
+                <input type="password" id="login-password" placeholder="Enter Password" required>
+                <button type="submit" class="button">Login</button>
+            </form>
+        </div>
+    </div>
+    <div id="registerDialog" class="dialog">
+        <div class="dialog-content">
+            <span class="close" onclick="closeDialog('registerDialog')">&times;</span>
+            <h2>Register</h2>
+            <form>
+                <label for="register-username">Username</label>
+                <input type="text" id="register-username" placeholder="Enter Username" required>
+                <label for="register-email">Email</label>
+                <input type="email" id="register-email" placeholder="Enter Email" required>
+                <label for="register-password">Password</label>
+                <input type="password" id="register-password" placeholder="Enter Password" required>
+                <button type="submit" class="button">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Cebu Technological University. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="articlescript.js"></script>
+</body>
+</html>
